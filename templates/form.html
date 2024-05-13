@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <title>HTTP server</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class='container'>
+  <header>
+    <menu>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contacts">Contacts</a></li>
+      <li><a href="/form">Form</a></li>
+      <li><a href="/todos">Todos</a></li>
+    </menu>
+  </header>
+
+  <h1>Form page</h1>
+
+  <form action='/todos' method='post'>
+    <div class='mb-3'>
+      <label for='id'>ID</label>
+      <input id='id' name='id' placeholder='ID...' type='number' value='99'>
+    </div>
+    <div class='mb-3'>
+      <label for='title'>Title</label>
+      <input id='title' name='title' placeholder='Title...' type='text' value='New todo title'>
+    </div>
+    <div class='mb-3'>
+      <label for='userId'>User ID</label>
+      <input id='userId' name='userId' placeholder='User ID...' type='number' value='9'>
+    </div>
+    <div class='mb-3'>
+      <input checked id='completed' name='completed' placeholder='Completed...' type='checkbox'>
+      <label for='completed'>Completed</label>
+    </div>
+    <button type='submit'>Submit</button>
+  </form>
+
+</div>
+
+</body>
+
+</html>
